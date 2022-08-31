@@ -1,18 +1,15 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-
 #container strong {
   font-size: 20px;
   line-height: 26px;
 }
-
 #container p {
   font-size: 16px;
   line-height: 22px;
@@ -21,7 +18,37 @@
 
   margin: 0;
 }
-
 #container a {
-  text-decoration: none;
+  text-decoration: none;}
+
+
+
+//IMPORTACION DE FONTS DE GOOGLE//
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+.logo{
+  width: 70%;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.titulologo{
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  margin-top: 90px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+}
+.titulo{
+  font-family: 'Roboto', sans-serif;
+}
+.subtitulo{
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+}
+.boton{
+  height: 50px;
 }
