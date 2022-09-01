@@ -10,16 +10,16 @@
 
   <section>
     <ion-item class="txtarea">
-      <ion-input type="text" placeholder="Correo Electronico"></ion-input>
+      <ion-input [(ngModel)]="user.usuario" type="text" placeholder="Correo Electronico"></ion-input>
     </ion-item>
 
     <ion-item class="txtarea">
-      <ion-input type="password" placeholder="Contraseña"></ion-input>
+      <ion-input [(ngModel)]="user.password" type="password" placeholder="Contraseña"></ion-input>
     </ion-item>
   </section>
 
   <section class="ion-margin-top">
-    <ion-button routerLink="/principal" expand="block" class="ion-margin-top boton" fill="solid" color="success">Iniciar Sesíon</ion-button> 
+    <ion-button routerLink="/principal" (click)="datousuario()" expand="block" class="ion-margin-top boton" fill="solid" color="success">Iniciar Sesíon</ion-button> 
   </section>
   
   <section>
