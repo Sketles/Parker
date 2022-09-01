@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./principal.page.scss'],
 })
 export class PrincipalPage implements OnInit {
-
+  
   data: any;
 
   constructor(private activeroute: ActivatedRoute, private router: Router) {
@@ -16,7 +16,7 @@ export class PrincipalPage implements OnInit {
       if (this.router.getCurrentNavigation().extras.state) { // Validamos que en la navegacion actual tenga extras
         this.data = this.router.getCurrentNavigation().extras.state.user; // Si tiene extra rescata lo enviado
         console.log(this.data) // Muestra por consola lo traido
-      }else{this.router.navigate(["/principal"])} // Si no tiene extra la navegacion actual navegar al login
+      }else{this.router.navigate(["/login"])} // Si no tiene extra la navegacion actual navegar al login
     });
   }
 

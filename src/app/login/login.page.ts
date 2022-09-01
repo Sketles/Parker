@@ -22,7 +22,7 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
   
-  ingresar(){
+  datosusuario(){
     // Se declara e instancia un elemento de tipo NavigationExtras
     let navigationExtras: NavigationExtras = {
       state: {
