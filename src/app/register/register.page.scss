@@ -1,8 +1,6 @@
 //IMPORTACION DE FONTS DE GOOGLE//
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-
-
 //PAGINA DE REGISTER
 .logo{
   width: 35%;
@@ -29,4 +27,22 @@
   margin-right: 5px;
   margin-bottom: 20px;
 }
-//FIN PAGINA DE REGISTER
+
+.input{
+  border-radius: 20px;
+  padding-left: auto;
+  font-size: 1.0em;
+  border: 1px solid #ffffff;
+  border-bottom: 0px;
+  box-shadow: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.area{
+  margin-left: 8px;
+  margin-right: 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
