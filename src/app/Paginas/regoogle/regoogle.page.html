@@ -1,0 +1,47 @@
+<!----------------MODULO BACKBOTON-->
+<app-backboton titulo=""></app-backboton>
+<!----------------MODULO BACKBOTON-->
+<ion-content>
+
+  <ion-card>
+    <p class="ion-text-center titulo">Vincular Cuenta</p>
+    <ion-card-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12"><ion-img class="logo" src="/assets/icon/vola.png"></ion-img></ion-col> 
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+    <ion-card-content>
+      <section class="ion-padding">
+        <ion-item>
+          <ion-label position="floating" color="boton" class="formulario">Nombre</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" color="boton" class="formulario">Matricula</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-list>
+          <ion-item>
+            <ion-label class="formulario">Pais</ion-label>
+            <ion-select mode="ios" interface="action-sheet" placeholder="Chile" cancelText="Cancelar">
+              <ion-select-option value="Chile">Argentina</ion-select-option>
+              <ion-select-option value="Brazil">Brazil</ion-select-option>
+              <ion-select-option value="Argentina">Chile</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+
+      </section>
+    
+      <section class="ion-text-center boton">
+        <ion-button routerLink="/home" fill="outline" shape="round" size="large" color="boton">
+          <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </section>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

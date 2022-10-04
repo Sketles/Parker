@@ -3,6 +3,7 @@
 
 /** Ionic CSS Variables **/
 :root {
+  
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -74,9 +75,19 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** BOTON **/
+  --ion-color-boton: #b100ff;
+  --ion-color-boton-rgb: 177,0,255;
+  --ion-color-boton-contrast: #ffffff;
+  --ion-color-boton-contrast-rgb: 255,255,255;
+  --ion-color-boton-shade: #9c00e0;
+  --ion-color-boton-tint: #b91aff;
+
 }
 
-@media (prefers-color-scheme: light) {
+
+@media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
    * -------------------------------------------
@@ -233,4 +244,13 @@
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+.ion-color-boton {
+  --ion-color-base: var(--ion-color-boton) !important;
+  --ion-color-base-rgb: var(--ion-color-boton-rgb) !important;
+  --ion-color-contrast: var(--ion-color-boton-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-boton-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-boton-shade) !important;
+  --ion-color-tint: var(--ion-color-boton-tint) !important;
 }
