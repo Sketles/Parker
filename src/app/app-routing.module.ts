@@ -1,32 +1,36 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules } from '@angular/router';
-import { Routes } from '@angular/router';
-import { RouterModule } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'bienvenida',
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'bienvenida',
+    loadChildren: () => import('./Paginas/bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
   },
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./Paginas/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'register',
-    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+    path: 'not-found',
+    loadChildren: () => import('./Paginas/not-found/not-found.module').then( m => m.NotFoundPageModule)
   },
   {
-    path: 'principal',
-    loadChildren: () => import('./principal/principal.module').then( m => m.PrincipalPageModule)
+    path: 'regoogle',
+    loadChildren: () => import('./Paginas/regoogle/regoogle.module').then( m => m.RegooglePageModule)
   },
-
-
+  {
+    path: 'renumero',
+    loadChildren: () => import('./Paginas/renumero/renumero.module').then( m => m.RenumeroPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./Paginas/home/home.module').then( m => m.HomePageModule)
+  }
 ];
 
 @NgModule({

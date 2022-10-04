@@ -1,0 +1,33 @@
+<!----------------HTML-->
+<ion-header></ion-header>
+
+<ion-content>
+  <ion-grid class="ion-padding">
+    <ion-button routerLink="/home" class="omitir" fill="clear" shape="round">Omitir</ion-button>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-img class="logo" src="/assets/icon/logomorado.png"></ion-img>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <h1 class="titulo ion-text-center">Parker</h1>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+
+  <section class="ion-text-center" class="ion-padding">
+    <p class="letras">Elije cómo quieres ingresar</p>
+
+    <ion-button routerLink="/regoogle" expand="full" class="google boton" color="boton" fill="outline" shape="round">
+    <ion-icon slot="start" name="logo-google"></ion-icon>Continuar con Google</ion-button>
+    
+    <ion-button routerLink="/renumero" expand="full" class="numero boton" color="boton" fill="outline" shape="round">
+    <ion-icon slot="start" name="call"></ion-icon>Continuar con Numero</ion-button>
+    
+    <a href="/bienvenida"><p class="otraforma">Continuar de otra forma</p></a>
+  </section>
+</ion-content>

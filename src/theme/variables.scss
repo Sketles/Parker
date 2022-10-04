@@ -3,29 +3,30 @@
 
 /** Ionic CSS Variables **/
 :root {
+  
   /** primary **/
-	--ion-color-primary: #202020;
-	--ion-color-primary-rgb: 32,32,32;
-	--ion-color-primary-contrast: #ffffff;
-	--ion-color-primary-contrast-rgb: 255,255,255;
-	--ion-color-primary-shade: #1c1c1c;
-	--ion-color-primary-tint: #363636;
+  --ion-color-primary: #3880ff;
+  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #3171e0;
+  --ion-color-primary-tint: #4c8dff;
 
   /** secondary **/
-	--ion-color-secondary: #FFD100;
-	--ion-color-secondary-rgb: 255,209,0;
-	--ion-color-secondary-contrast: #000000;
-	--ion-color-secondary-contrast-rgb: 0,0,0;
-	--ion-color-secondary-shade: #e0b800;
-	--ion-color-secondary-tint: #ffd61a;
+  --ion-color-secondary: #3dc2ff;
+  --ion-color-secondary-rgb: 61, 194, 255;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #36abe0;
+  --ion-color-secondary-tint: #50c8ff;
 
   /** tertiary **/
-	--ion-color-tertiary: #ECF8F8;
-	--ion-color-tertiary-rgb: 236,248,248;
-	--ion-color-tertiary-contrast: #000000;
-	--ion-color-tertiary-contrast-rgb: 0,0,0;
-	--ion-color-tertiary-shade: #d0dada;
-	--ion-color-tertiary-tint: #eef9f9;
+  --ion-color-tertiary: #5260ff;
+  --ion-color-tertiary-rgb: 82, 96, 255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #4854e0;
+  --ion-color-tertiary-tint: #6370ff;
 
   /** success **/
   --ion-color-success: #2dd36f;
@@ -74,9 +75,19 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** BOTON **/
+  --ion-color-boton: #b100ff;
+  --ion-color-boton-rgb: 177,0,255;
+  --ion-color-boton-contrast: #ffffff;
+  --ion-color-boton-contrast-rgb: 255,255,255;
+  --ion-color-boton-shade: #9c00e0;
+  --ion-color-boton-tint: #b91aff;
+
 }
 
-@media (prefers-color-scheme: light) {
+
+@media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
    * -------------------------------------------
@@ -233,4 +244,13 @@
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+.ion-color-boton {
+  --ion-color-base: var(--ion-color-boton) !important;
+  --ion-color-base-rgb: var(--ion-color-boton-rgb) !important;
+  --ion-color-contrast: var(--ion-color-boton-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-boton-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-boton-shade) !important;
+  --ion-color-tint: var(--ion-color-boton-tint) !important;
 }
