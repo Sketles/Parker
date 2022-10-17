@@ -7,30 +7,28 @@ const routes: Routes = [
     redirectTo: 'bienvenida',
     pathMatch: 'full'
   },
+
+  //RUTAS A LAS PAGINAS
   {
-    path: 'bienvenida',
-    loadChildren: () => import('./Paginas/bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
+    path: 'bienvenida', loadChildren: () => import('./Paginas/bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
   },
   {
-    path: 'login',
-    loadChildren: () => import('./Paginas/login/login.module').then( m => m.LoginPageModule)
+    path: 'login', loadChildren: () => import('./Paginas/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: '**',
-    loadChildren: () => import('./Paginas/not-found/not-found.module').then( m => m.NotFoundPageModule)
+    path: 'regoogle', loadChildren: () => import('./Paginas/regoogle/regoogle.module').then( m => m.RegooglePageModule)
   },
   {
-    path: 'regoogle',
-    loadChildren: () => import('./Paginas/regoogle/regoogle.module').then( m => m.RegooglePageModule)
+    path: 'renumero', loadChildren: () => import('./Paginas/renumero/renumero.module').then( m => m.RenumeroPageModule)
   },
   {
-    path: 'renumero',
-    loadChildren: () => import('./Paginas/renumero/renumero.module').then( m => m.RenumeroPageModule)
+    path: 'home', loadChildren: () => import('./Paginas/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'home',
-    loadChildren: () => import('./Paginas/home/home.module').then( m => m.HomePageModule)
+    path: '**', loadChildren: () => import('./Paginas/not-found/not-found.module').then( m => m.NotFoundPageModule)
   },
+
+  
 ];
 
 @NgModule({

@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-renumero',
   templateUrl: './renumero.page.html',
   styleUrls: ['./renumero.page.scss'],
 })
-export class RenumeroPage implements OnInit {
 
-  constructor() { }
+export class RenumeroPage {
 
-  ngOnInit() {
-  }
+  usuario={ usuario:"", matricula:"" }
 
+    constructor(private router: Router) { }
+
+    nombreusuario(){
+      let navigationExtras: NavigationExtras = {
+        state: {usuario: this.usuario}
+      };
+      this.router.navigate(['/home'],navigationExtras);
+    }
 }

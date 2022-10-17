@@ -16,11 +16,11 @@
       <section class="ion-padding">
         <ion-item>
           <ion-label position="floating" color="boton" class="formulario">Nombre</ion-label>
-          <ion-input></ion-input>
+          <ion-input [(ngModel)]="usuario.nombre"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating" color="boton" class="formulario">Matricula</ion-label>
-          <ion-input></ion-input>
+          <ion-input [(ngModel)]="usuario.matricula"></ion-input>
         </ion-item>
 
         <ion-list>
@@ -37,7 +37,7 @@
       </section>
     
       <section class="ion-text-center boton">
-        <ion-button routerLink="/home" fill="outline" shape="round" size="large" color="boton">
+        <ion-button routerLink="/home" (click)="nombreusuario()" fill="outline" shape="round" size="large" color="boton">
           <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
         </ion-button>
       </section>
