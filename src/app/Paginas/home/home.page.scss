@@ -11,3 +11,18 @@
 .search{
     margin-top: 15px;
 }
+
+.googlemaps{
+    overflow:hidden;
+    padding-bottom:100%;
+    position:relative;
+    height:0;
+}
+
+.googlemaps iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
