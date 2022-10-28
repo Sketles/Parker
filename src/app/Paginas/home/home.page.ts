@@ -8,14 +8,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HomePage {
 
-  datosusuario: any;
+  constructor() { }
 
-  constructor(private activeroute: ActivatedRoute, private router: Router) {
-    this.activeroute.queryParams.subscribe(params => {
-      if (this.router.getCurrentNavigation().extras.state) {
-        this.datosusuario = this.router.getCurrentNavigation().extras.state.usuario;
-        console.log(this.datosusuario)
-      }else{this.router.navigate(["/login"])}
-    });
+  ngOnInit() {
   }
+  
 }

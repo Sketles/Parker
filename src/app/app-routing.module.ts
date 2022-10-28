@@ -4,14 +4,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'bienvenida',
+    redirectTo: 'slide',
     pathMatch: 'full'
   },
 
   //RUTAS A LAS PAGINAS
-  {
-    path: 'bienvenida', loadChildren: () => import('./Paginas/bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
-  },
+
   {
     path: 'login', loadChildren: () => import('./Paginas/login/login.module').then( m => m.LoginPageModule)
   },
@@ -24,9 +22,14 @@ const routes: Routes = [
   {
     path: 'home', loadChildren: () => import('./Paginas/home/home.module').then( m => m.HomePageModule)
   },
+   {
+    path: 'slide', loadChildren: () => import('./Paginas/slide/slide.module').then( m => m.SlidePageModule)
+  },
   {
     path: '**', loadChildren: () => import('./Paginas/not-found/not-found.module').then( m => m.NotFoundPageModule)
   },
+ 
+
 
   
 ];
