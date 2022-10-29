@@ -9,14 +9,10 @@ import { Router, NavigationExtras } from '@angular/router';
 
 export class RenumeroPage {
 
-  usuario={ usuario:"", matricula:"" }
+  constructor() { }
 
-    constructor(private router: Router) { }
+  ngOnInit() {
+  }
 
-    nombreusuario(){
-      let navigationExtras: NavigationExtras = {
-        state: {usuario: this.usuario}
-      };
-      this.router.navigate(['/home'],navigationExtras);
-    }
+
 }

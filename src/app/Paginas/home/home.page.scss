@@ -11,3 +11,33 @@
 .search{
     margin-top: 15px;
 }
+
+.googlemaps{
+    overflow:hidden;
+    padding-bottom:100%;
+    position:relative;
+    height:0;
+}
+
+.googlemaps iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.boton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.botonmenu{
+    height: 30px;
+}
+
+ion-icon {
+    font-size: 27px;
+  }

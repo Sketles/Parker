@@ -9,15 +9,10 @@ import { NavigationExtras, Router } from '@angular/router';
 
 
 export class RegooglePage {
+  
+  constructor() { }
 
-    usuario={ usuario:"", matricula:"" }
+  ngOnInit() {
+  }
 
-    constructor(private router: Router) { }
-
-    nombreusuario(){
-      let navigationExtras: NavigationExtras = {
-        state: {usuario: this.usuario}
-      };
-      this.router.navigate(['/home'],navigationExtras);
-    }
 }
