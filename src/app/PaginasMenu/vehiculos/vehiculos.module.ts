@@ -4,9 +4,11 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RegooglePageRoutingModule } from './regoogle-routing.module';
+import { VehiculosPageRoutingModule } from './vehiculos-routing.module';
 
-import { RegooglePage } from './regoogle.page';
+import { VehiculosPage } from './vehiculos.page';
+import { ApiService } from '../../Servicios/api.service';
+import { HttpClient } from '@angular/common/http';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
 
 
@@ -15,9 +17,12 @@ import { ComponentesModule } from 'src/app/componentes/componentes.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    RegooglePageRoutingModule,
+    VehiculosPageRoutingModule,
+    ApiService,
+    HttpClient,
     ComponentesModule,
+    
   ],
-  declarations: [RegooglePage]
+  declarations: [VehiculosPage]
 })
-export class RegooglePageModule {}
+export class VehiculosPageModule {}

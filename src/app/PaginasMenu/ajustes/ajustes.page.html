@@ -1,0 +1,28 @@
+<!--MODULO DE BACKBOTON-->
+<app-backboton texto="Atras" ruta="/home"></app-backboton>
+<!--MODULO DE BACKBOTON-->
+<ion-content class="ion-padding">
+    <ion-title class="ion-text-center titulo text">Ajustes</ion-title>
+    <ion-card>
+        <ion-card-content>
+            <ion-list>
+                <ion-item>
+                  <ion-label>Modo Oscuro</ion-label>
+                  <ion-toggle color="boton" slot="end" [checked]="true" mode="ios" ></ion-toggle>
+                </ion-item>
+                <ion-item>
+                  <ion-label>GPS Activo</ion-label>
+                  <ion-toggle color="boton" slot="end" mode="ios" ></ion-toggle>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Permitir Camara</ion-label>
+                    <ion-toggle color="boton" slot="end" [checked]="true" mode="ios" ></ion-toggle>
+                  </ion-item>
+                <ion-item>
+                  <ion-label>Modo 5G</ion-label>
+                  <ion-toggle color="boton" slot="end" [disabled]="true" mode="ios" ></ion-toggle>
+                </ion-item>
+              </ion-list>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

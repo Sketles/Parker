@@ -16,14 +16,30 @@
         <ion-content class="ion-padding">
 
           <ion-list>
-            <ion-item><ion-button class="botonmenu" fill="clear"><ion-icon slot="start" name="home"></ion-icon>Inicio</ion-button></ion-item>
-            <ion-item><ion-button class="botonmenu" fill="clear"><ion-icon slot="start" name="car-sport"></ion-icon>Mis vehículos</ion-button></ion-item>
-            <ion-item><ion-button class="botonmenu" fill="clear"><ion-icon slot="start" name="business"></ion-icon>Mis estacionamientos</ion-button></ion-item>
-            <ion-item><ion-button class="botonmenu" fill="clear"><ion-icon slot="start" name="qr-code"></ion-icon>Escanear Portico</ion-button></ion-item>
-            <ion-item><ion-button class="botonmenu" fill="clear"><ion-icon slot="start" name="card"></ion-icon>Pagos y sanciones</ion-button></ion-item>
-            <ion-item><ion-button class="botonmenu" fill="clear"><ion-icon slot="start" name="settings"></ion-icon>Ajustes</ion-button></ion-item>
-            <ion-item><ion-button class="botonmenu" fill="clear"><ion-icon slot="start" name="information-circle"></ion-icon>Ayuda</ion-button></ion-item>
-            <ion-item><ion-button class="botonmenu" fill="clear"><ion-icon slot="start" name="exit"></ion-icon>Salir</ion-button></ion-item>
+            <ion-item>
+              <ion-button routerLink="/home" class="btm" fill="clear"><ion-icon slot="start" name="home"></ion-icon>Inicio</ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-button routerLink="/vehiculos" class="btm" fill="clear"><ion-icon slot="start" name="car-sport"></ion-icon>Mis vehículos</ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-button routerLink="/estacionamientos" class="btm" fill="clear"><ion-icon slot="start" name="business"></ion-icon>Mis estacionamientos</ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-button routerLink="/codigoqr" class="btm" fill="clear"><ion-icon slot="start" name="qr-code"></ion-icon>Escanear Portico</ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-button routerLink="/pagos" class="btm" fill="clear"><ion-icon slot="start" name="card"></ion-icon>Pagos y sanciones</ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-button routerLink="/ajustes" class="btm" fill="clear"><ion-icon slot="start" name="settings"></ion-icon>Ajustes</ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-button routerLink="/ayuda" class="btm" fill="clear"><ion-icon slot="start" name="information-circle"></ion-icon>Ayuda</ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-button routerLink="/autos"class="btm" fill="clear"><ion-icon slot="start" name="exit"></ion-icon>Salir</ion-button>
+            </ion-item>
           </ion-list>
 
         </ion-content>
