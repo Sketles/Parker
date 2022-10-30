@@ -17,20 +17,10 @@ export class ApiService {
 
   apiURL = 'https://jsonplaceholder.typicode.com'; // Se establece la base url del API a consumir
 
-  constructor(public http: HttpClient) { } // Se declara la variable http de tipo HttpClient
+  constructor(private http: HttpClient) { } // Se declara la variable http de tipo HttpClient
 
-  getPosts1():Observable<any>{
+  getPosts():Observable<any>{
     return this.http.get(this.apiURL+'/posts/').pipe(retry(3));
-  }
-
-  getPosts(){
-    return new Promise(resolve=>{
-      this.http.get(this.apiURL).subscribe(data=>{
-          resolve(data);
-      },error=>{
-        console.log(error);
-      });
-    });
   }
 
   getPost(id):Observable<any>{

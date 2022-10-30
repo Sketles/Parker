@@ -1,11 +1,15 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-title>Header</ion-title>
-    </ion-toolbar>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button (click)="goBack()" defaultHref="home" text="Atras"></ion-back-button>
+      </ion-buttons>
+    <ion-title>Mis vehiculos</ion-title>
+  </ion-toolbar>
 </ion-header>
 <ion-content>
-    <div class="post" *ngFor="let post of arrayPosts">
-        <h2>{{post.title}}</h2>
-        <p>{{post.body}}</p>
-    </div>
+    <ion-button (click)="getPosts()" expand="block" fill="clear" shape="round">getPosts</ion-button>
+    <ion-button (click)="getPost()" expand="block" fill="clear" shape="round">getPost(2)</ion-button>
+    <ion-button (click)="createPost()" expand="block" fill="clear" shape="round">createPost</ion-button>
+    <ion-button (click)="updatePost()" expand="block" fill="clear" shape="round">updatePost(2)</ion-button>
+    <ion-button (click)="deletePost()" expand="block" fill="clear" shape="round">deletePost(5)</ion-button>
 </ion-content>

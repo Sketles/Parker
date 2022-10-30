@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
 import { ApiService } from 'src/app/Servicios/api.service';
+import { Component } from '@angular/core';
+import { IonRouterOutlet } from '@ionic/angular';
 
 @Component({
   selector: 'app-vehiculos',
@@ -8,21 +9,65 @@ import { ApiService } from 'src/app/Servicios/api.service';
 })
 export class VehiculosPage {
 
-  arrayPosts:any;
+  constructor(private api: ApiService ,  private routerOutlet: IonRouterOutlet) { }
 
-  constructor(public api: ApiService) {}
+  goBack() { this.routerOutlet.pop(); }
 
 
-  ionViewDidLoad() {
-    this.getPosts();//Llamamos a la función getPost cuando la vista se cargue
+  createPost(){
+    var post={
+      title: 'titulo prueba',
+      body: 'algun cuerpo del post',
+      userId: 11
+    }
+    this.api.createPost(post).subscribe(
+      (success)=>
+        {console.log(success);},
+      error=>
+        {console.log(error);
+    })
   }
 
-  getPosts() { //llamamos a la funcion getPost de nuestro servicio.
-    this.api.getPosts()
-    .then(data => {
-      this.arrayPosts = data;
-    });
+  getPosts(){;
+    this.api.getPosts().subscribe(
+      (success)=>
+        {console.log(success);},
+      error=>
+        {console.log(error);})
+  }
+
+  getPost(){
+    var id:number = 2;
+    this.api.getPost(id).subscribe(
+      (success)=>
+        {console.log(success);},
+      error=>
+        {console.log(error);})
   }
 
 
+  deletePost(){
+    var id:number = 5;
+    this.api.deletePost(id).subscribe(
+      (success)=>
+        {console.log(success);},
+      error=>
+        {console.log(error);})
+  }
+
+
+  updatePost(){
+    var id:number = 2;
+    var post={
+      title: 'titulo modificado',
+      body: 'algun cuerpo del post modificado',
+      userId: 11
+    }
+    this.api.updatePost(id,post).subscribe(
+      (success)=>
+        {console.log(success);},
+      error=>
+        {console.log(error);}
+    )
+  }
 }

@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
 
-import { VehiculosPage } from './vehiculos.page';
-import { ComponentesModule } from 'src/app/componentes/componentes.module';
-import { ApiService } from 'src/app/Servicios/api.service';
-import { HttpClient } from '@angular/common/http';
+import { IonicModule } from '@ionic/angular';
 
 import { VehiculosPageRoutingModule } from './vehiculos-routing.module';
 
+import { VehiculosPage } from './vehiculos.page';
+import { ApiService } from '../../Servicios/api.service';
+import { HttpClient } from '@angular/common/http';
+import { ComponentesModule } from 'src/app/componentes/componentes.module';
 
 
 @NgModule({
@@ -17,10 +17,11 @@ import { VehiculosPageRoutingModule } from './vehiculos-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    ComponentesModule,
+    VehiculosPageRoutingModule,
     ApiService,
     HttpClient,
-    VehiculosPageRoutingModule, 
+    ComponentesModule,
+    
   ],
   declarations: [VehiculosPage]
 })
