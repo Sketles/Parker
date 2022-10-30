@@ -1,0 +1,11 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Header</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div class="post" *ngFor="let post of arrayPosts">
+        <h2>{{post.title}}</h2>
+        <p>{{post.body}}</p>
+    </div>
+</ion-content>

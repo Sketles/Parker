@@ -26,8 +26,21 @@ const routes: Routes = [
     path: 'slide', loadChildren: () => import('./Paginas/slide/slide.module').then( m => m.SlidePageModule)
   },
   {
+    path: 'ayuda', loadChildren: () => import('./PaginasMenu/ayuda/ayuda.module').then( m => m.AyudaPageModule)
+  },
+  {
+    path: 'ajustes', loadChildren: () => import('./PaginasMenu/ajustes/ajustes.module').then( m => m.AjustesPageModule)
+  },
+  {
+    path: 'vehiculos', loadChildren: () => import('./PaginasMenu/vehiculos/vehiculos.module').then( m => m.VehiculosPageModule)
+  },
+  {
     path: '**', loadChildren: () => import('./Paginas/not-found/not-found.module').then( m => m.NotFoundPageModule)
   },
+ 
+
+
+
  
 
 

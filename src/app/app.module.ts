@@ -8,16 +8,22 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { IonicStorageModule } from '@ionic/storage-angular'; //import del STORAGE
+import { HttpClientModule } from '@angular/common/http'; //import del API HTTP
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
-    AppRoutingModule, 
-    IonicStorageModule.forRoot()],
+    AppRoutingModule,
+    HttpClientModule, 
+    IonicStorageModule.forRoot(),
+    CommonModule
+  ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   
 })
 export class AppModule {}
+

@@ -4,20 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RegooglePageRoutingModule } from './regoogle-routing.module';
+import { AjustesPageRoutingModule } from './ajustes-routing.module';
 
-import { RegooglePage } from './regoogle.page';
+import { AjustesPage } from './ajustes.page';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegooglePageRoutingModule,
+    AjustesPageRoutingModule,
     ComponentesModule,
   ],
-  declarations: [RegooglePage]
+  declarations: [AjustesPage]
 })
-export class RegooglePageModule {}
+export class AjustesPageModule {}

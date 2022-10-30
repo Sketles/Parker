@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BackbotonComponent implements OnInit {
 
   @Input() titulo: string = '';
+  @Input() texto: string = '';
+  @Input() ruta: string = '';
 
   constructor() { }
 
