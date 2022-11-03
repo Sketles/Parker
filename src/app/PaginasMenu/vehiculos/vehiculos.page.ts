@@ -1,5 +1,5 @@
 import { ApiService } from 'src/app/Servicios/api.service';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonRouterOutlet } from '@ionic/angular';
 
 @Component({
@@ -7,12 +7,11 @@ import { IonRouterOutlet } from '@ionic/angular';
   templateUrl: './vehiculos.page.html',
   styleUrls: ['./vehiculos.page.scss'],
 })
-export class VehiculosPage {
+export class VehiculosPage implements OnInit {
 
   constructor(private api: ApiService ,  private routerOutlet: IonRouterOutlet) { }
 
   goBack() { this.routerOutlet.pop(); }
-
 
   createPost(){
     var post={
@@ -28,7 +27,7 @@ export class VehiculosPage {
     })
   }
 
-  getPosts(){;
+  getPosts(){
     this.api.getPosts().subscribe(
       (success)=>
         {console.log(success);},
@@ -52,7 +51,8 @@ export class VehiculosPage {
       (success)=>
         {console.log(success);},
       error=>
-        {console.log(error);})
+        {console.log
+          (error);})
   }
 
 
@@ -70,4 +70,7 @@ export class VehiculosPage {
         {console.log(error);}
     )
   }
+
+  ngOnInit() {}
+
 }
