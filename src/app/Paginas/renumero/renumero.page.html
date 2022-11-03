@@ -16,11 +16,11 @@
       <section class="ion-padding">
 
         <ion-item>
-          <ion-label [(ngModel)]="login.Usuario" position="floating" color="boton" class="formulario">Correo</ion-label>
+          <ion-label position="floating" color="boton" class="formulario">Correo</ion-label>
           <ion-input type="email"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label [(ngModel)]="login.Password" position="floating" color="boton" class="formulario">Contraseña</ion-label>
+          <ion-label position="floating" color="boton" class="formulario">Contraseña</ion-label>
           <ion-input type="password"></ion-input>
         </ion-item>
         <ion-item>
@@ -42,15 +42,9 @@
       </section>
     
       <section class="ion-text-center boton">
-
-        <ion-button (click)="ingresar() fill="outline" shape="round" size="large" color="boton">
+        <ion-button routerLink="/home" fill="outline" shape="round" size="large" color="boton">
           <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
         </ion-button>
-
-        <ion-button (click)="registrar()" fill="outline" shape="round" size="large" color="success">
-          <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
-        </ion-button>
-
       </section>
     </ion-card-content>
   </ion-card>
