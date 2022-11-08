@@ -48,9 +48,12 @@ const routes: Routes = [
     loadChildren: () => import('./PaginasMenu/vehiculo/vehiculo.module').then( m => m.VehiculoPageModule)
   },
   {
+    path: 'geolocalizacion',
+    loadChildren: () => import('./PaginasMenu/geolocalizacion/geolocalizacion.module').then( m => m.GeolocalizacionPageModule)
+  },
+  {
     path: '**', loadChildren: () => import('./Paginas/not-found/not-found.module').then( m => m.NotFoundPageModule) //404
   },
-
 ];
 
 @NgModule({

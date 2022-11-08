@@ -19,16 +19,12 @@ export class VehiculoPage implements OnInit {
   constructor(private router: Router, private servicioBD: DbserviceService) {}
 
   ngOnInit(){
-    //this.servicioBD.presentAlert("1");
     this.servicioBD.dbState().subscribe((res) =>{
-      //this.servicioBD.presentAlert("2");
       if(res){
-        //this.servicioBD.presentAlert("3");
         this.servicioBD.fetchVehiculos().subscribe(item =>{
           this.vehiculos = item;
         })
       }
-      //this.servicioBD.presentAlert("4");
     });
   }
 
