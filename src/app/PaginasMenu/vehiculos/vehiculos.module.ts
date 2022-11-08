@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { VehiculosPageRoutingModule } from './vehiculos-routing.module';
 
 import { VehiculosPage } from './vehiculos.page';
-import { ApiService } from '../../Servicios/api.service';
+import { ApiService } from '../../Servicios/API/api.service';
 import { HttpClient } from '@angular/common/http';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
 

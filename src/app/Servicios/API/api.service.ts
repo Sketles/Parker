@@ -15,9 +15,9 @@ export class ApiService {
     })
   }
 
-  apiURL = 'https://jsonplaceholder.typicode.com'; // Se establece la base url del API a consumir
+  apiURL = 'https://jsonplaceholder.typicode.com'; // API URL JSON PAGINA
 
-  constructor(private http: HttpClient) { } // Se declara la variable http de tipo HttpClient
+  constructor(private http: HttpClient) { } // DECLARACION DE VARIABLE DE TIPO HTTP
 
   getPosts():Observable<any>{
     return this.http.get<any>(this.apiURL+'/posts/').pipe(retry(3));
