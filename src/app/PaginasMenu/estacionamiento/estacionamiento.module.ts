@@ -4,25 +4,23 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { VehiculosPageRoutingModule } from './vehiculos-routing.module';
+import { EstacionamientoPageRoutingModule } from './estacionamiento-routing.module';
 
-import { VehiculosPage } from './vehiculos.page';
+import { EstacionamientoPage } from './estacionamiento.page';
 import { ApiService } from '../../Servicios/API/api.service';
 import { HttpClient } from '@angular/common/http';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    VehiculosPageRoutingModule,
+    EstacionamientoPageRoutingModule,
     ApiService,
     HttpClient,
-    ComponentesModule,
-    
+    ComponentesModule, 
   ],
-  declarations: [VehiculosPage]
+  declarations: [EstacionamientoPage]
 })
-export class VehiculosPageModule {}
+export class EstacionamientoPageModule {}
