@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button (click)="goBack()" defaultHref="home" text="Atras"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding-vertical">
+
+    <ion-card class="ion-text-center">
+      <ion-card-title>
+        <ion-label class="ion-padding">
+          <h1>Datos del Vehiculo</h1>
+        </ion-label>
+      </ion-card-title>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Matricula</ion-label>
+          <ion-input type="text" [(ngModel)]="matriculavehiculo"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Modelo</ion-label>
+          <ion-input type="text" [(ngModel)]="modelovehiculo"></ion-input>
+        </ion-item>
+      </ion-card-content>
+      <ion-button shape="block" (click)="guardar()" color="boton">Guardar Vehiculo</ion-button>
+    </ion-card>
+
+  </div>
+</ion-content>
+

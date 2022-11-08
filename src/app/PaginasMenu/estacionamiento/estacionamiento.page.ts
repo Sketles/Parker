@@ -1,13 +1,13 @@
-import { ApiService } from 'src/app/Servicios/API/api.service';
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/Servicios/API/api.service';
 import { IonRouterOutlet } from '@ionic/angular';
 
 @Component({
-  selector: 'app-vehiculos',
-  templateUrl: './vehiculos.page.html',
-  styleUrls: ['./vehiculos.page.scss'],
+  selector: 'app-estacionamiento',
+  templateUrl: './estacionamiento.page.html',
+  styleUrls: ['./estacionamiento.page.scss'],
 })
-export class VehiculosPage implements OnInit {
+export class EstacionamientoPage implements OnInit {
 
   constructor(private api: ApiService ,  private routerOutlet: IonRouterOutlet) { }
 
