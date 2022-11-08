@@ -1,6 +1,8 @@
 import { Component, ViewChildren } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ViewChild, ElementRef } from '@angular/core';
+import { Geolocation,Geoposition } from '@awesome-cordova-plugins/geolocation/ngx';
+
 
 declare var google: any;
 
@@ -17,6 +19,8 @@ export class HomePage {
 
   constructor() { }
 
+
+  //-----------------------API GOOGLE MAPS----------------------------------//
   ionViewDidEnter(){
     this.showMap();
   }
@@ -29,6 +33,6 @@ export class HomePage {
       disableDefaultUI: true
     }
     this.map = new google.maps.Map(this.mapRef.nativeElement, options);
-  }
+  } //-----------------------API GOOGLE MAPS----------------------------------//
   
 }
