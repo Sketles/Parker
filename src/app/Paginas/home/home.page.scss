@@ -12,19 +12,11 @@
     margin-top: 15px;
 }
 
-.googlemaps{
+#map{
     overflow:hidden;
     padding-bottom:100%;
     position:relative;
     height:0;
-}
-
-.googlemaps iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
 }
 
 .boton{
@@ -34,10 +26,18 @@
     margin-right: 15px;
 }
 
+.boton2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
 .btm{
     height: 30px;
 }
 
 ion-icon {
     font-size: 27px;
-  }
+}
+
