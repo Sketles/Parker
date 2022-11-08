@@ -1,0 +1,7 @@
+npm install
+npm install cordova-sqlite-storage 
+npm install @awesome-cordova-plugins/sqlite
+npm install --save @awesome-cordova-plugins/core 
+ionic cap sync
+ionic capacitor copy android
+npx cap open android
