@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-title>pagos</ion-title>
+
+    
+  
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-segment value="tarjeta" (ionChange)="segmentChanged($event)">
+        <ion-segment-button  value="tarjeta">
+          <ion-icon name="home"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="efectivo">
+          <ion-icon name="briefcase-outline"></ion-icon>
+        </ion-segment-button>
+        
+          
+      </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-router-outlet></ion-router-outlet>
+</ion-content>
